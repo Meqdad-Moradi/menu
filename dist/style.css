@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  color: #050e42;
+  background-color: #fafafa;
+  line-height: 1.8em;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 4em 0;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.main-title h1 {
+  font-size: 2rem;
+  position: relative;
+  max-width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-title h1::after {
+  content: '';
+  height: 4px;
+  width: 50%;
+  background-color: #daa30d;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-container {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container .btn {
+  padding: .5em 1.5em;
+  border: 1px solid #daa30d;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #daa30d;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all .4s ease;
+}
+
+.btn-container .btn:not(:last-child) {
+  margin-right: 1em;
+}
+
+.btn-container .btn:hover, .btn-container .btn:focus {
+  background-color: #050e42;
+}
+
+.center {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+.menu .menu-img {
+  height: 100%;
+  width: 100%;
+  flex: 130%;
+  border: 3px solid #daa30d;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.menu .menu-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu .menu-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: .5em;
+}
+
+.menu .menu-header .title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.menu .menu-header .price {
+  color: #946c00;
+  font-weight: 600;
+}
+
+.menu .desc {
+  margin-top: 1em;
+  color: #3c4145;
+}
+/*# sourceMappingURL=style.css.map */
